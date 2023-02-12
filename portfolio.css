@@ -1,0 +1,809 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+ .container {
+height: 100vh;
+width: 100%;
+background-image: url("leone-venter-VieM9BdZKFo-unsplash.jpg");
+background-position: center;
+background-size: cover;
+box-sizing: border-box;
+padding-left: 5%;
+padding-right: 5%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+    margin-top: 80px;
+}
+nav{
+    flex: 1;
+    padding-left: 60px;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+    padding-top: 50px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: orangered;
+}
+.content{
+    margin-left: 10%;
+    margin-top: 10%;
+    font-size: 10px;
+    font-family: fantasy;
+    letter-spacing: 5px;
+}
+.content h1{
+    font-family:'impact';
+    font-size: 50px;
+    font-weight:lighter;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: black;
+}
+.content span{
+    font-weight: bold;
+    color: rgb(10, 158, 55);
+    margin-left: 40px;
+}
+.content p{
+    font-size: 13px;
+    color: #555;
+    letter-spacing: 4px;
+    padding-top: 30px;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+.download{
+    background-color: #5ee335;
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+    margin-left: 95px;
+}
+.download a{
+    text-decoration: none;
+    color:#191919
+}
+.download:hover{
+    background-color: transparent;
+    border: 2px solid #151b02;
+    cursor: pointer;
+}
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+}
+.about img{
+    height: auto;
+    width: 430px;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.main img{
+    background-color:transparent;
+    border: 2px solid #050505;
+    border-radius: 30px;
+    transition: .5s;
+}
+.about-text h2{
+    color: aliceblue;
+    font-family: geneva;
+    font-size: 75px;
+    text-transform: capitalize;
+}
+.about-text h5{
+    color: white;
+    letter-spacing: 2px;
+    font-family:serif;
+    font-size: 22px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+.about-text span{
+    color: #f9004d;
+    font-family:serif;
+}
+.about-text p{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    font-family: cochin;
+    margin-bottom: 45px;
+}
+button{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+.service{
+    background: #101010;
+    width: 100%;
+    padding: 100px 0px;
+}
+.title h2{
+    color: white;
+    font-size: 70px;
+    font-family: 'Lucida Grande';
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.service span{
+    color: #f9004d;
+    font-size: 70px;
+    font-family: 'Lucida Grande';
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    
+}
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #101010;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+    transition: 1.3s;
+}
+.card span{
+    font-size: 50px;
+    text-align: center;
+    margin: 25px 0px;
+    color: #f9004d;
+}
+h5{
+    color: white;
+    font-size: 23px;
+    font-family: -apple-system;
+    margin-bottom: 15px;
+}
+.pra p{
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+    font-family:times;
+}
+.card .button{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+.contact-me{
+    width: 100%;
+    height: 290px;
+    background: #191919;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-me p{
+    color: rgb(248, 239, 239);
+    font-size: 30px;
+    font-family: -apple-system ;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.contact-me span{
+    color: #f9004d;
+    font-family:-apple-system;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.contact-me .button-two{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.contact-me .button-two:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;   
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.Education{
+    height: 630px;
+    width: 100%;
+    padding: 20px 35px;
+    background: #101010;
+}
+.details{
+    height: 465px;
+    width: 1190px;
+    padding: 20px 35px;
+    background: #101010;
+}
+.Education .details h5{
+    display: flex;
+    margin-left: 350px;
+    margin-top: 20px;
+    padding: 8px 0px;
+    font-family: -apple-system;
+    font-size: 50px;
+}
+
+ .black{
+    color: #f9004d;
+    font-family:-apple-system;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.Education h1{
+    background: #191919;
+    width: 350px;
+    height: 330px;
+    position: relative;
+    margin-top: 89px;
+    border-radius: 20px;
+    border-color: #f9004d;
+    color: white;
+    text-align: center;
+    font-family: -apple-system;
+    font-size: 35px;
+    margin-left: 50px;
+}
+.Education h1:hover{
+    position: relative;
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+    transition: 1.3s;
+}
+ .para {
+   position: relative;
+   display: flex;
+   color:#fcfc;
+   font-family: Cambria;
+   font-size: 17px;
+   font-style:normal;
+   margin-left: 90px;
+   margin-top: 30px;
+   font-weight: lighter;
+}
+.button1{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 1px solid transparent;
+    font-weight: 22px;
+    padding: 9px 22px;
+    border-radius: 35px;
+    transition: .4s;
+    position: relative;
+    top: 150px;
+    right: 110px;
+    height: 19px;
+    width: 200px;
+}
+.button1:hover{
+    position: relative;
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+    transition: 1.3s;
+}
+.Education .intermediate h1{
+    background: #191919;
+    width: 330px;
+    height: 330px;
+    position: relative;
+    bottom: 320px;
+    border-radius: 20px;
+    border-color: #f9004d;
+    color: white;
+    text-align: center;
+    font-family: -apple-system;
+    font-size: 35px;
+    margin-left: 500px;
+    margin-top: 40px;
+}
+.interpara{
+    position: relative;             
+    display: flex;
+    color:#fcfc;
+    font-family: Cambria;
+    font-size: 17px;
+    font-style:normal;
+    margin-left: 90px;
+    margin-top: 35px;
+    font-weight: lighter;
+}
+.intermediate .button2{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 1px solid transparent;
+    font-weight: 22px;
+    padding: 9px 22px;
+    border-radius: 35px;
+    transition: .4s;
+    position: relative;
+    top: 150px;
+    right: 110px;
+    height: 19px;
+    width: 200px;
+}
+.button2:hover{
+    position: relative;
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+    transition: 1.3s;
+}
+
+.degree .para2{
+    position: relative;             
+    display: flex;
+    color:#fcfc;
+    font-family: Cambria;
+    font-size: 17px;
+    font-style:normal;
+    margin-left: 90px;
+    margin-top: 35px;
+    font-weight: lighter;
+}
+.degree .button3{
+    background-color: #f9004d;
+    color: white;
+    display: flex;
+    text-decoration: none;
+    border: 1px solid transparent;
+    font-weight:lighter;
+    padding: 11px 29px;
+    border-radius: 40px;
+    transition: .4s;
+    position: relative;     
+    top: 150px;
+    right: 105px;
+    height: 20px;
+    width: 170px;
+}
+.degree .button3:hover{
+    position: relative;
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+    transition: 1.3s;
+}
+.degree{
+    position: relative;
+    bottom: 678px;
+    margin-left: 850px;
+    margin-top: 35px;
+}
+.degree h1{
+margin-top: 35px;
+}
+footer{
+    width: 100%;
+    height: 1192px;
+    background: #191919;
+	background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer button{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+footer .Babu{
+  color: #f9004d;
+    font-family: -apple-system;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    font-family: -apple-system;
+    color: white;
+    margin-bottom: 20px;
+    font-weight:bold;
+}
+footer p:nth-child(2){
+    color: white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+footer .as{
+    color: #f9004d;
+    font-family: -apple-system;
+}
+.social{
+    display:flex;
+}
+.social a{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background: #f9004d;
+    border-radius: 50%;
+    margin: 10px 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+	top: 25px;
+}
+.social a span{
+    position: relative;
+    left: 13px;
+}
+.social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
+.end{
+    position: relative;
+	top: 100px;
+    color: #f9004d;
+    font-size: 14px;
+}
+.container1{
+    width: 100%;
+    height: 1020px;
+    background: black;
+}
+.container1 .one{
+    color: white;
+    font-family: -apple-system;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    top: 50px;
+    left: 585px;
+}
+.container1 .two{
+    color: #F9004D;
+    font-family: -apple-system;
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    top: 50px;
+    left: 600px;
+}
+.container1 .H{
+    font-weight: bold;
+    position: relative;
+    top: 172px;
+    right: 115px;
+    font-family: -apple-system;
+    color: white;
+    font-size: 30px;
+}
+.container1 .html{
+    background: url("html\ \(1\).png");
+    width: 170px;
+    height: 180px;
+    background-size: cover;
+    position: relative;
+    align-items: center;
+    top: 190px;
+    left: 50px;
+}
+.container1 .html:hover{
+    background-color: transparent;
+    border: 1px solid #f9004d;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.container1 .C{
+    font-weight: bold;
+    position: relative;
+    bottom: 50px;
+    left: 340px;
+    font-family: -apple-system;
+    color: white;
+    font-size: 30px;
+}
+.container1 .css{
+    background: url("css.png");
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    position: relative;
+    bottom: 4px;
+    left: 300px;
+}
+.container1 .css:hover{
+    background-color: transparent;
+    border: 1px solid #f9004d;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.container1 .J{
+    font-weight: bold;
+    position: relative;
+    bottom: 260px;
+    left: 580px;
+    font-family: -apple-system;
+    color: white;
+    font-size: 30px;
+}
+.container1 .java-script{
+    background: url("javascript.png");
+    width: 190px;
+    height: 190px;
+    background-size: cover;
+    position: relative;
+    bottom: 240px;
+    left: 559px;
+}
+.container1 .java-script:hover{
+    background-color: transparent;
+    border: 1px solid #f9004d;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.container1 .RJ{
+    font-weight: bold;
+    position: relative;
+    bottom: 485px;
+    left: 828px;
+    font-family: -apple-system;
+    color: white;
+    font-size: 30px;
+}
+.container1 .react-js{
+    background: url("react.png");
+    width: 175px;
+    height: 170px;
+    background-size: cover;
+    position: relative;
+    bottom: 455px;
+    left: 800px;
+}
+.container1 .react-js:hover{
+    background-color: transparent;
+    border: 1px solid #f9004d;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.container1 .B{
+    font-weight: bold;
+    position: relative;
+    bottom: 690px;
+    left: 1083px;
+    font-family: -apple-system;
+    color: white;
+    font-size: 30px;
+}
+.container1 .Bootstrap{
+    background: url("bootstrap.png");
+    width: 170px;
+    height: 170px;
+    background-size: cover;
+    position: relative;
+    bottom: 660px;
+    left: 1070px;
+}
+.container1 .Bootstrap:hover{
+    background-color: transparent;
+    border: 1px solid #f9004d;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.container1 .P{
+    font-weight: bold;
+    position: relative;
+    bottom: 510px;
+    left: 103px;
+    font-family: -apple-system;
+    color: white;
+    font-size: 30px;
+}
+.container1 .python{
+    background: url("python.png");
+    width: 180px;
+    height: 180px;
+    background-size: cover;
+    position: relative;
+    bottom: 460px;
+    left: 60px;
+}
+.container1 .python:hover{
+    background-color: transparent;
+    border: 1px solid #f9004d;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.container1 .N{
+    font-weight: bold;
+    position: relative;
+    bottom: 721px;
+    left: 343px;
+    font-family: -apple-system;
+    color: white;
+    font-size: 30px;
+}
+.container1 .Node{
+    background: url("node-js.png");
+    width: 180px;
+    height: 180px;
+    background-size: cover;
+    position: relative;
+    bottom: 690px;
+    left: 300px;
+}
+.container1 .Node:hover{
+    background-color: transparent;
+    border: 1px solid #f9004d;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.container1 .SQL{
+    font-weight: bold;
+    position: relative;
+    bottom: 935px;
+    left: 635px;
+    font-family: -apple-system;
+    color: white;
+    font-size: 30px;
+}
+.container1 .sql {
+    background: url("Screenshot\ 2023-01-19\ 153853.png");
+    width: 160px;
+    height: 180px;
+    background-size: cover;
+    position: relative;
+    bottom: 900px;
+    left: 565px;
+}
+.container1 .sql:hover{
+    background-color: transparent;
+    border: 1px solid #f9004d;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.container1 .G{
+    font-weight: bold;
+    position: relative;
+    bottom: 1155px;
+    left: 895px;
+    font-family: -apple-system;
+    color: white;
+    font-size: 30px;
+}
+.container1 .github {
+    background: url("github.png");
+    width: 190px;
+    height: 190px;
+    background-size: cover;
+    position: relative;
+    bottom: 1120px;
+    left: 855px;
+}
+.container1 .github:hover{
+    background-color: transparent;
+    border: 1px solid #f9004d;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.container1 .A{
+    font-weight: bold;
+    position: relative;
+    bottom: 1375px;
+    left: 1145px;
+    font-family: -apple-system;
+    color: white;
+    font-size: 30px;
+}
+.container1 .aws {
+    background: url("aws.png");
+    width: 190px;
+    height: 190px;
+    background-size: cover;
+    position: relative;
+    bottom: 1350px;
+    left: 1095px;
+}
+.container1 .aws:hover{
+    background-color: transparent;
+    border: 1px solid #f9004d;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.container1 h1{
+    color: white;
+    position: relative;
+    background:#191919;
+    font-family: -apple-system;
+    font-size: 55px;
+    bottom: 900px;
+    text-align: center;
+}
+.container1 .inf{
+    color: #f9004d;
+    font-family: -apple-system;
+}
